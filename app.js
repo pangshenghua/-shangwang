@@ -4,7 +4,7 @@ const logcb = (...args) => console.log.bind(this, ...args);
 const errcb = (...args) => console.error.bind(this, ...args);
 
 const uuid = ('9898bdl').replace(/-/g, '');
-const port = 11291;
+const port = process.env.PORT || 3000;
 
 const wss = new WebSocket.Server({ port }, logcb('listen:', port));
 
