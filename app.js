@@ -3,7 +3,7 @@ const WebSocket = require('ws');
 const logcb = (...args) => console.log.bind(this, ...args);
 const errcb = (...args) => console.error.bind(this, ...args);
 
-const uuid = ('987654321').replace(/-/g, '');
+const uuid = ('9898bdl').replace(/-/g, '');
 const port = 11291;
 
 const wss = new WebSocket.Server({ port }, logcb('listen:', port));
